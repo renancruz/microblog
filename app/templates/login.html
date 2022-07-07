@@ -2,8 +2,14 @@
 
 {% block conteudo %}
   <form action="/autenticar" method="post">
-    Usuario: <input type="text" name="usuario"> <br>
-    Senha: <input type="text" name="senha"> <br>
+    <fieldset>
+      <p>Usuario: </p>
+      <input type="text" name="usuario">
+    </fieldset>
+    <fieldset>
+      <p>Senha:</p>
+      <input type="text" name="senha">
+    </fieldset>
     <button type="submit">Entrar</button>
   </form>
 {% endblock %}
