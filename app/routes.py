@@ -2,7 +2,7 @@ from flask import render_template
 from flask import request
 from app import app
 
-@app.route('/')
+@app.route('/', defaults={"nome":"usuário"})
 @app.route('/index', defaults={"nome":"usuário"})
 @app.route('/index/<nome>')
 def index(nome):
